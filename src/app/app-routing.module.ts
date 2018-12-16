@@ -4,6 +4,7 @@ import { MaterialDemoComponent } from './../app/material/material-demo/material-
 import { HomeComponent } from './../app/home/home.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'material-demo',
     component: MaterialDemoComponent
