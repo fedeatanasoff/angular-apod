@@ -6,10 +6,12 @@ import {
   MatButtonModule,
   MatIconModule,
   MatExpansionModule,
-  MatInputModule
+  MatInputModule,
+  MatListModule
 } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
+import { MaterialListComponent } from './material-list/material-list.component';
 
 @NgModule({
   imports: [
@@ -18,19 +20,22 @@ import { MaterialInputComponent } from './material-input/material-input.componen
     MatButtonModule,
     MatIconModule,
     MatExpansionModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
     MatExpansionModule,
-    MatInputModule
+    MatInputModule,
+    MatListModule
   ],
   declarations: [
     MaterialDemoComponent,
     MaterialButtonComponent,
-    MaterialInputComponent
+    MaterialInputComponent,
+    MaterialListComponent
   ]
 })
 export class MaterialModule {}
