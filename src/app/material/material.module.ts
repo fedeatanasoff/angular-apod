@@ -5,8 +5,11 @@ import {
   MatToolbarModule,
   MatButtonModule,
   MatIconModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatInputModule
 } from '@angular/material';
+import { MaterialButtonComponent } from './material-button/material-button.component';
+import { MaterialInputComponent } from './material-input/material-input.component';
 
 @NgModule({
   imports: [
@@ -14,14 +17,20 @@ import {
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule
   ],
   exports: [
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule
   ],
-  declarations: [MaterialDemoComponent]
+  declarations: [
+    MaterialDemoComponent,
+    MaterialButtonComponent,
+    MaterialInputComponent
+  ]
 })
 export class MaterialModule {}
