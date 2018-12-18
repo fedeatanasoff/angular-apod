@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./material-input.component.css']
 })
 export class MaterialInputComponent implements OnInit {
+  usuario = {
+    nombre: 'Ignacio'
+  };
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

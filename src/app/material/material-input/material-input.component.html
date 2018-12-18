@@ -1,7 +1,12 @@
 <h3>input basicos</h3>
 <div>
   <mat-form-field>
-    <input matInput type="text" placeholder="ingrese un nombre" />
+    <input
+      matInput
+      type="text"
+      placeholder="ingrese un nombre"
+      [value]="usuario.nombre"
+    />
   </mat-form-field>
 </div>
 

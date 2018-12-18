@@ -1,7 +1,9 @@
 <h3>Botones</h3>
 <div>
-  <button mat-button>Basico</button>
-  <button mat-button color="primary">Primary</button>
+  <button mat-button disabled="{{formulario.valido}}">Basico</button>
+  <button mat-button [disabled]="formulario.valido" color="primary">
+    Primary
+  </button>
 </div>
 <h3>botones con elevacion</h3>
 <div>
