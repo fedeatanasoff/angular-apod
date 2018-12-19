@@ -1,4 +1,4 @@
-<mat-list>
+<!-- <mat-list>
   <mat-list-item *ngFor="let estu of lista">
     <img
       *ngIf="estu.fotoURL"
@@ -17,4 +17,9 @@
     <span mat-line>{{ estu.nombre }}</span>
     <span mat-line>{{ estu.ciudad }}</span>
   </mat-list-item>
+</mat-list> -->
+
+<mat-list>
+  <fd-item-estudiante *ngFor="let est of lista" [estudiante]="est">
+  </fd-item-estudiante>
 </mat-list>

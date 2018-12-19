@@ -12,6 +12,7 @@ import {
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
 import { MaterialListComponent } from './material-list/material-list.component';
+import { ItemEstudianteComponent } from './material-list/item-estudiante/item-estudiante.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { MaterialListComponent } from './material-list/material-list.component';
     MaterialDemoComponent,
     MaterialButtonComponent,
     MaterialInputComponent,
-    MaterialListComponent
+    MaterialListComponent,
+    ItemEstudianteComponent
   ]
 })
 export class MaterialModule {}
