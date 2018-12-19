@@ -1,4 +1,4 @@
-<mat-list-item>
+<mat-list-item (click)="onClick(estudiante)">
   <img
     *ngIf="estudiante.fotoURL"
     [src]="estudiante.fotoURL"

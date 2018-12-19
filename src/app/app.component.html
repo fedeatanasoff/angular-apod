@@ -4,6 +4,12 @@
   <span>Angular desde Cero</span>
 </mat-toolbar>
 <nav>
-  <a> <button mat-button color="primary">Home</button> </a>
+  <a> <button mat-button color="primary" [routerLink]="'/'">Home</button> </a>
+  <a>
+    <button mat-button color="primary" [routerLink]="'/material-demo'">
+      Material Link
+    </button>
+  </a>
 </nav>
+
 <router-outlet></router-outlet>

@@ -20,6 +20,10 @@
 </mat-list> -->
 
 <mat-list>
-  <fd-item-estudiante *ngFor="let est of lista" [estudiante]="est">
+  <fd-item-estudiante
+    *ngFor="let est of lista"
+    [estudiante]="est"
+    (onMouseClick)="onMouseClick($event)"
+  >
   </fd-item-estudiante>
 </mat-list>
