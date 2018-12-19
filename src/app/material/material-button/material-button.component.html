@@ -1,13 +1,13 @@
 <h3>Botones</h3>
 <div>
-  <button mat-button disabled="{{formulario.valido}}">Basico</button>
+  <button mat-button disabled="{{ formulario.valido }}">Basico</button>
   <button mat-button [disabled]="formulario.valido" color="primary">
     Primary
   </button>
 </div>
 <h3>botones con elevacion</h3>
 <div>
-  <button mat-raised-button>basico raised</button>
+  <button mat-raised-button (click)="onClick($event)">basico raised</button>
   <button mat-raised-button color="primary">basico raised</button>
 </div>
 <h3>botones con iconos</h3>

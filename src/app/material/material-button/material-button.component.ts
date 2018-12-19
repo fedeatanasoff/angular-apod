@@ -17,4 +17,8 @@ export class MaterialButtonComponent implements OnInit {
       console.log('validando el form');
     }, 3000);
   }
+
+  onClick(evento): void {
+    console.log(evento);
+  }
 }
