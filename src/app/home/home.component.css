@@ -1,0 +1,12 @@
+.card-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mat-card {
+  margin: 10px auto;
+}
+
+.title {
+  text-align: center;
+}

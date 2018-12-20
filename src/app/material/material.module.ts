@@ -7,7 +7,8 @@ import {
   MatIconModule,
   MatExpansionModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatCardModule
 } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
@@ -22,7 +23,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatIconModule,
     MatExpansionModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   exports: [
     MatToolbarModule,
@@ -30,7 +32,8 @@ import { ItemEstudianteComponent } from './material-list/item-estudiante/item-es
     MatIconModule,
     MatExpansionModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   declarations: [
     MaterialDemoComponent,
