@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
+import { NasaApiService } from './shared/services/nasa-api.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -15,7 +16,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [NasaApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
