@@ -9,10 +9,18 @@ import { NasaApiService } from '../shared/services/nasa-api.service';
 })
 export class HomeComponent implements OnInit {
   apod: Apod;
-
+  error: string;
   constructor(private _nasaApi: NasaApiService) {}
 
   ngOnInit() {
-    this.apod = this._nasaApi.getApod();
+    this._nasaApi.getApod().subscribe(
+      data => {
+        this.apod = data;
+        console.log(this.apod);
+      },
+      error => {
+        this.error = 'Error al conectar con el servidor.';
+      }
+    );
   }
 }
