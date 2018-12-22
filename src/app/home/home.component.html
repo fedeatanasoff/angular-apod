@@ -9,6 +9,7 @@
         mat-card-avatar
       />
       <mat-card-title> {{ apod.titulo }} </mat-card-title>
+
       <mat-card-subtitle>{{
         apod.fecha | date: "mediumDate"
       }}</mat-card-subtitle>
@@ -18,9 +19,7 @@
       <p>{{ apod.explanation }}</p>
     </mat-card-content>
     <mat-card-actions>
-      <a mat-raised-button [href]="apod.hdurl" target="_blank" color="primary"
-        >Ver en HD</a
-      >
+      <a mat-button [href]="apod.hdurl" target="_blank">Ver en HD</a>
     </mat-card-actions>
   </mat-card>
 </div>
