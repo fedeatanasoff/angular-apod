@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './home/home.component';
 import { NasaApiService } from './shared/services/nasa-api.service';
+import { MarsModule } from './mars/mars.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -15,7 +16,8 @@ import { NasaApiService } from './shared/services/nasa-api.service';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MarsModule
   ],
   providers: [NasaApiService],
   bootstrap: [AppComponent]
