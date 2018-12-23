@@ -1,8 +1,16 @@
 <div>
-  <mat-card>
+  <mat-form-field>
+    <mat-select placeholder="select camera">
+      <mat-option *ngFor="let cam of cameras" [value]="cam">{{
+        cam
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-card *ngFor="let image of marsImage">
     <mat-card-header>
-      <mat-card-title> titulo </mat-card-title>
-      <mat-card-subtitle>fecha</mat-card-subtitle>
+      <mat-card-title> {{ image.id }} </mat-card-title>
+      <mat-card-subtitle>{{ image.rover.name }}</mat-card-subtitle>
     </mat-card-header>
+    <img mat-card-image [src]="image.img_src" alt="" />
   </mat-card>
 </div>
