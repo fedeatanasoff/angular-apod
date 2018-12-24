@@ -12,7 +12,12 @@
         apod.date | date: "mediumDate"
       }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image [src]="apod.url" alt="Photo of a Shiba Inu" />
+    <div *ngIf="apod.media_type === 'image'">
+      <img mat-card-image [src]="apod.url" alt="Photo of a Shiba Inu" />
+    </div>
+    <div *ngIf="apod.media_type === 'video'">
+      <video [src]="apod.url"></video>
+    </div>
     <mat-card-content>
       <p>{{ apod.explanation }}</p>
     </mat-card-content>

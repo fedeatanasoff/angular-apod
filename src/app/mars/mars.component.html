@@ -1,9 +1,12 @@
 <div>
   <mat-form-field>
-    <mat-select placeholder="select camera">
-      <mat-option *ngFor="let cam of cameras" [value]="cam">{{
-        cam
-      }}</mat-option>
+    <mat-select placeholder="select camera" [(ngModel)]="currentCamera">
+      <mat-option
+        *ngFor="let cam of cameras"
+        [value]="cam"
+        (click)="onSelectCamera(cam)"
+        >{{ cam }}</mat-option
+      >
     </mat-select>
   </mat-form-field>
   <mat-card *ngFor="let image of marsImage">
