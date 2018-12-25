@@ -9,11 +9,13 @@
       >
     </mat-select>
   </mat-form-field>
-  <mat-card *ngFor="let image of marsImage">
-    <mat-card-header>
-      <mat-card-title> {{ image.id }} </mat-card-title>
-      <mat-card-subtitle>{{ image.rover.name }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image [src]="image.img_src" alt="" />
-  </mat-card>
+  <div class="mars-container">
+    <mat-card *ngFor="let image of marsImage" class="mars-content">
+      <mat-card-header>
+        <mat-card-title> {{ image.id }} </mat-card-title>
+        <mat-card-subtitle>{{ image.rover.name }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="image.img_src" alt="" />
+    </mat-card>
+  </div>
 </div>

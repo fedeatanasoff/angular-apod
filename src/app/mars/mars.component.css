@@ -1,0 +1,11 @@
+.mars-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px;
+}
+
+.mars-content {
+  width: 200px;
+  box-sizing: border-box;
+  margin: 15px;
+}
