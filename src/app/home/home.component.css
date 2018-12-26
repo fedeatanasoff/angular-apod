@@ -1,12 +1,7 @@
-.card-container {
-  align-items: center;
+.example-card {
+  max-width: 400px;
 }
 
-.card-content {
-  width: 800px;
-  margin: 10px auto;
-}
-
-h1 {
-  text-align: center;
+mat-card-header {
+  margin-bottom: 10px;
 }

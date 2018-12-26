@@ -1,0 +1,19 @@
+.example-card {
+  max-width: 600px;
+}
+
+mat-card-header {
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+}

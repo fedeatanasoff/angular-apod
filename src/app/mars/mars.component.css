@@ -9,3 +9,8 @@
   box-sizing: border-box;
   margin: 15px;
 }
+
+.title {
+  text-align: center;
+  margin: 50px 0;
+}
