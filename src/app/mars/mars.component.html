@@ -1,7 +1,7 @@
 <h1 class="mat-headline title">Mars Rover Images</h1>
 
-<div>
-  <mat-form-field>
+<div class="contenedor">
+  <mat-form-field class="mars-container">
     <mat-select placeholder="select camera" [(ngModel)]="currentCamera">
       <mat-option
         *ngFor="let cam of cameras"
@@ -19,5 +19,8 @@
       </mat-card-header>
       <img mat-card-image [src]="image.img_src" alt="" />
     </mat-card>
+    <div *ngIf="!marsImage">
+      <h2>no se encontraron imagenes para esta camara</h2>
+    </div>
   </div>
 </div>

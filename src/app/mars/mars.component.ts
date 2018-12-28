@@ -9,15 +9,7 @@ import { NasaApiService } from '../shared/services/nasa-api.service';
 })
 export class MarsComponent implements OnInit {
   marsImage: MarsImage[];
-  cameras: string[] = [
-    'FHAZ',
-    'RHAZ',
-    'MAST',
-    'CHEMCAM',
-    'MAHLI',
-    'MARDI',
-    'NAVCAM'
-  ];
+  cameras: string[] = ['FHAZ', 'RHAZ', 'MAST', 'CHEMCAM', 'NAVCAM'];
   currentCamera: string;
 
   constructor(private _http: NasaApiService) {}

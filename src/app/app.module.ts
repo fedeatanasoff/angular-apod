@@ -21,7 +21,13 @@ import { ApodComponent } from './apod/apod.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, MainNavComponent, ApodComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    MainNavComponent,
+    ApodComponent,
+    NotFoundComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
